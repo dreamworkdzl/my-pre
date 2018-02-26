@@ -6,4 +6,7 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
+router.get('/admin', function(req, res, next) {
+  res.render('admin', { title: '管理中心' });
+});
 module.exports = router;
