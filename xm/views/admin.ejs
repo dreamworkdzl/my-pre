@@ -129,5 +129,183 @@
         </ul>
       </div>
     </div>
+    <div class="main">
+      <div class="list-show">
+        <h2>导航菜单</h2>
+        <ul id="key">
+          <li class="lis icon1">
+            <a href="#">商品管理</a>
+            <ul id="content" class="hidden">
+              <li class="items" id="list">商品列表</li>
+              <li class="items">添加新商品</li>
+              <li class="items">商品分类</li>
+              <li class="items">用户评论</li>
+              <li class="items">商品品牌</li>
+              <li class="items">商品类型</li>
+              <li class="items">商品回收站</li>
+              <li class="items">图片批量处理</li>
+              <li class="items">商品批量上传</li>
+              <li class="items">商品批量导出</li>
+              <li class="items">商品批量修改</li>
+              <li class="items">生成商品代码</li>
+              <li class="items">标签管理</li>
+              <li class="items">虚拟商品列表</li>
+              <li class="items">添加虚拟商品</li>
+              <li class="items">更改加密串</li>
+              <li class="items">商品自动上下架</li>
+            </ul>
+          </li>
+          <li class="lis icon2">
+            <a href="#">促销管理</a>
+            <ul class="hidden"></ul>
+          </li>
+          <li class="lis icon3">
+            <a href="#">订单管理</a>
+            <ul class="hidden"></ul>
+          </li>
+          <li class="lis icon4">
+            <a href="#">广告管理</a>
+            <ul class="hidden"></ul>
+          </li>
+          <li class="lis icon5">
+            <a href="#">报表设计</a>
+            <ul class="hidden"></ul>
+          </li>
+          <li class="lis icon6">
+            <a href="#">文章管理</a>
+            <ul class="hidden"></ul>
+          </li>
+          <li class="lis icon7">
+            <a href="#">会员管理</a>
+            <ul class="hidden"></ul>
+          </li>
+          <li class="lis icon8">
+            <a href="#">权限管理</a>
+            <ul class="hidden"></ul>
+          </li>
+          <li class="lis icon9">
+            <a href="#">系统设置</a>
+            <ul class="hidden"></ul>
+          </li>
+          <li class="lis icon10">
+            <a href="#">模板管理</a>
+            <ul class="hidden"></ul>
+          </li>
+          <li class="lis icon11">
+            <a href="#">数据库管理</a>
+            <ul class="hidden"></ul>
+          </li>
+          <li class="lis icon12">
+            <a href="#">短信管理</a>
+            <ul class="hidden"></ul>
+          </li>
+          <li class="lis icon13">
+            <a href="#">推荐管理</a>
+            <ul class="hidden"></ul>
+          </li>
+          <li class="lis icon14">
+            <a href="#">邮件群发管理</a>
+            <ul class="hidden"></ul>
+          </li>
+          <li class="lis icon15">
+            <a href="#">移动版管理</a>
+            <ul class="hidden"></ul>
+          </li>
+          <li class="lis icon15">
+            <a href="#">模板堂知识库</a>
+            <ul class="hidden"></ul>
+          </li>
+        </ul>
+      </div>
+      <div class="list-hidden"></div>
+      <div class="on-off">
+        <a href="javascript:;" class="right" id="list_control"></a>
+      </div>
+      <div class="pages">
+        <div class="page1 page-show">
+          <h1>
+            <span class="title"><a href="#">ECSHOP&nbsp;管理中心</a>-&nbsp;商品列表</span>
+            <span class="for-help"><a href="#"><img src="images/jnsy.png"></a></span>
+            <span class="add-new"><a href="#" id="to-add-new">添加新商品</a></span>
+          </h1>
+          <div class="search">
+            <label>关键字<input type="text" id="search-word" size="15"></label>
+            <input type="submit" id="sub" value="搜索" />
+          </div>
+          <div class="list-div">
+            <table cellspacing="1" cellpadding="3" id="goods-msg">
+              <tr>
+                <th><input type="checkbox" id="check-all">
+                  <a href="#">编号</a>
+                </th>
+                <th>
+                  <a href="#">商品名称</a>
+                </th>
+                <th>
+                  <a href="#">货号</a>
+                </th>
+                <th>
+                  <a href="#">价格</a>
+                </th>
+                <th>
+                  <a href="#">上架</a>
+                </th>
+                <th>
+                  <a href="#">精品</a>
+                </th>
+                <th>
+                  <a href="#">新品</a>
+                </th>
+                <th>
+                  <a href="#">热销</a>
+                </th>
+                <th>
+                  <a href="#">推荐排序</a>
+                </th>
+                <th>
+                  <a href="#">库存</a>
+                </th>
+                <th>
+                  <a href="#">虚拟销量</a>
+                </th>
+                <th>操作</th>
+              </tr>
+              
+            </table>
+            <!-------------------分页------------------------>
+            <table id="page-table">
+              <tr>
+                <td>
+                  <div id="turn-page">
+                    总计
+                    <span id="totalRecode"></span> 个记录分为
+                    <span id="totalPages"></span> 页当前第
+                    <span id="pageCurrent"></span> 页，每页
+                    <input type="text" id="pageSize" size="3" value="10" />
+                    <span id="page-link">
+                      <a href="javascript:;" id="firstPage">第一页</a>
+                      <a href="javascript:;" id="prevPage">上一页</a>
+                      <a href="javascript:;" id="nextPage">下一页</a>
+                      <a href="javascript:;" id="lastPage">最末页</a>
+                    </span>
+                    <select id="gotoPage">
+                      <option value="1">1</option>
+                    </select>
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <!--    添加商品页    -->
+        <div class="page2">
+          <h1>
+            <span class="title"><a href="#">ECSHOP&nbsp;管理中心</a>-&nbsp;添加新商品</span>
+            <span class="for-help"><a href="#"><img src="images/jnsy.png"></a></span>
+            <span class="add-new"><a href="#" id="to-list">商品列表</a></span>
+          </h1>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
