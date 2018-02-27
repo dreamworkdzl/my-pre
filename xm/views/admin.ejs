@@ -304,6 +304,120 @@
             <span class="for-help"><a href="#"><img src="images/jnsy.png"></a></span>
             <span class="add-new"><a href="#" id="to-list">商品列表</a></span>
           </h1>
+          <div class="tab-div">
+            <div class="tab-key">
+              <p>
+                <span class="tab-front" id="general-tab">通用信息</span>
+                <span class="tab-back" id="detail-tab">详细描述</span>
+                <span class="tab-back" id="mix-tab">其他信息</span>
+                <span class="tab-back" id="properties-tab">商品属性</span>
+                <span class="tab-back" id="gallery-tab">商品相册</span>
+              </p>
+            </div>
+            <div class="tab-body">
+              <!-- tab-one -->
+              <div id="general-page" class="cur-page">
+                <form>
+                  <p>
+                    <span class="label">商品名称:</span>
+                    <span>
+                      <input type="text" size="30" id="goods_name"/>
+                      <i class="colors">
+                        <img src="images/color_selecter.gif"/>
+                      </i>
+                      <select name="goods_name_style" class="goods_name_style">
+                        <option value="">字体样式</option>
+                        <option value="strong">加粗</option>
+                        <option value="em">斜体</option>
+                        <option value="u">下划线</option>
+                        <option value="strike">删除线</option>            
+                      </select>
+                    </span>
+                    <span class="require-field">*</span>
+                  </p>
+                  <p><span class="label"><a href="#"><img src="images/notice.gif"></a>商品货号:</span><span><input type="text" size="20" id="goods_id"/><br><b class="tip">如果您不输入商品货号，系统将自动生成一个唯一的货号。</b></span></p>
+                  <p>
+                    <span class="label">商品分类:</span>
+                    <span>
+                      <select id="goods_class">
+                        <option>请选择...</option>
+                        <option>笔记本电脑</option>
+                        <option>手机</option>
+                      </select>
+                      <a href="javascript:;" class="special" id="add1">添加分类</a>
+                      <span id="category_add">
+                        <input type="text" class="text" size="10"/>
+                        <a href="javascript:;" class="special">确定</a>
+                        <a href="javascript:;" class="special">分类管理</a>
+                        <a href="javascript:;" class="special" id="close1"><<</a>
+                      </span>
+                    </span>
+                    <span class="require-field">*</span>
+                  </p>
+                  <p>
+                    <span class="label">扩展分类:</span>
+                    <span><input type="button" class="button" value="添加" /></span>
+                    <span id="another"></span>
+                  </p>
+                  <p><span class="label">商品品牌:</span>
+                    <span>
+                      <select>
+                        <option>请选择...</option>
+                      </select>
+                      <a href="javascript:;" class="special" id="add2">添加品牌</a>
+                      <span id="brand_add">
+                        <input type="text" class="text" size="10"/>
+                        <a href="javascript:;" class="special">确定</a>
+                        <a href="javascript:;" class="special">分类管理</a>
+                        <a href="javascript:;" class="special" id="close2"><<</a>
+                      </span>
+                    </span>
+                  </p>
+                  <p><span class="label">本店售价:</span><span><input type="text" size="20" value="0"  id="price"/><input type="button" value="按市场价计算" class="same_button"></span><span class="require-field">*</span></p>
+                  <p>
+                    <span class="label"><a href="#"><img src="images/notice.gif"></a>会员价格:</span>
+                    <span>
+                      注册用户<input type="text" size="10" value="-1" class="no-float"/>
+                      代销用户<input type="text" size="10" value="-1" class="no-float"/>
+                      vip<input type="text" size="10" value="-1" class="no-float"/><br>
+                      <b class="tip">会员价格为-1时表示会员价格按会员等级折扣率计算。你也可以为每个等级指定一个固定价格</b>
+                    </span>
+                  </p>
+                  <p>
+                    <span class="label"><a href="#"><img src="images/notice.gif"></a>商品优惠价格:</span>
+                    <span>
+                      <a href="javascript:;" style="color: #666;">[+]</a>
+                      优惠数量<input type="text" size="10" class="no-float"/>
+                      优惠价格<input type="text" size="10" class="no-float"/><br>
+                      <b class="tip">购买数量达到优惠数量时享受的优惠价格</b>
+                    </span>
+                  </p>
+                  <p><span class="label">市场售价:</span><span><input type="text" size="20" value="0"><input type="button" value="取整数" class="same_button"></span></p>
+                  <p><span class="label">虚拟销量:</span><span><input type="text" size="20" value="0"/></span></p>
+                  <p><span class="label"><a href="#"><img src="images/notice.gif"></a>赠送消费积分数:</span><span><input type="text" size="20" value="-1"/><br><b class="tip">   
+购买该商品时赠送消费积分数,-1表示按商品价格赠送</b></span></p>
+                  <p><span class="label"><a href="#"><img src="images/notice.gif"></a>赠送等级积分数:</span><span><input type="text" size="20" value="-1"/><br><b class="tip">   
+购买该商品时赠送消费积分数,-1表示按商品价格赠送</b></span></p>
+                  <p><span class="label"><a href="#"><img src="images/notice.gif"></a>积分购买金额:</span><span><input type="text" size="20" value="0"/><br><b class="tip">(此处需填写金额)购买该商品时最多可以使用积分的金额</b></span></p>
+                  <p><span class="label"><label for="is-promote"><input type="checkbox" id="is-promote">促销价:</label></span><span><input type="text" size="20" disabled=""/></span></p>
+                  <p><span class="label">促销日期:</span><span><input type="text" size="10"/><input type="button" class="button" value="选择"><span>-</span><input type="text" size="10"/><input type="button" class="button" value="选择"></span></p>
+                  <p>
+                    <span class="label" style="height: 60px;">上传商品图片:</span><input type="file" size="20" class="file" id="img"/><img src="images/no.gif" class="pic-no">
+                    <br/>
+                    <input type="text" placeholder="商品图片外部URL" class="file-text" style="float: none;margin: 5px 0;" size="40">
+                  </p>
+                  <p><span class="label" style="height: 80px;">上传商品缩略图:</span><input type="file" size="20" disabled="" class="file"/><img src="images/no.gif" class="pic-no"><br/><input type="text" placeholder="商品图片外部URL" disabled="" class="file-text" style="float: none; margin: 5px 0;" size="40">
+                    <br/>
+                    <input type="checkbox" id="auto-small-pic" style="float: left;margin: 0;" checked="checked"><label for="auto-small-pic">自动生成商品缩略图</label>
+                  </p>
+                </form>
+                <div class="button-div">
+                  <input type="button" value="确定" class="button up_load1"/>
+                  <input type="button" value="重置" class="button"/>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

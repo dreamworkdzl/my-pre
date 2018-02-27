@@ -361,10 +361,222 @@ body {
   text-align: right;
 }
 
-
-
-
-
+/*  page2  */
+.page2 {
+  display: none;
+}
+.tab-div {
+  background: #f3f3f3;
+  border: 1px solid #d7d7d7;
+  margin: 0 0 10px 0;
+  padding: 1px;
+}
+.tab-key {
+  margin-top: 0;
+  background: #efefef;
+  padding-left: 10px;
+  height: 39px;
+}
+.tab-key p .tab-front{
+  background: #fefefe;
+  height: 39px;
+  line-height: 39px;
+  display: block;
+  float: left;
+  padding: 0 20px;
+  text-align: center;
+  font-weight: bold;
+  color: #000;
+  cursor: hand;
+  cursor: pointer;
+  font-size: 12px;
+}
+.tab-key p .tab-back{
+  padding: 0 20px;
+  text-align: center;
+  font-size: 12px;
+  float: left;
+  display: block;
+  float: left;
+  color: #787878;
+  line-height: 39px;
+  cursor: hand;
+  cursor: pointer;
+}
+.tab-body {
+  padding: 10px;
+  background: #fefefe;
+}
+.tab-body .cur-page {
+  display: block;
+}
+.tab-body form {
+  width: 90%;
+  height: auto;
+  margin: 0 auto;
+  font-size: 12px;
+}
+.tab-body {
+  width: 100%;
+  display: block;
+  overflow: hidden;
+}
+.tab-body form span {
+  display: block;
+  float: left;
+  vertical-align: top;
+  padding: 5px 1em;
+  line-height: 30px;
+  overflow: hidden;
+}
+.tab-body form select{
+  float: left;
+  margin: 5px;
+}
+.tab-body form a{
+  margin-right: 5px;
+  line-height: 30px;
+}
+.tab-body form input{
+  margin-top: 5px;
+  padding: 2px;
+  float: left;
+}
+.tab-body form .tip{
+  float: left;
+  font-weight: normal;
+  font-size: 12px;
+  color: #666;
+  line-height: 18px;
+}
+#general-page form{
+  width: 90%;
+  height: auto;
+  margin: 0 auto;
+  font-size: 12px;
+}
+#general-page form p{
+  width: 100%;
+  display: block;
+  overflow: hidden;
+}
+#general-page form span{
+  display: block;
+  float: left;
+  vertical-align: top;
+  padding: 5px 1em;
+  line-height: 30px;
+  overflow: hidden;
+/*  width: 60%;*/
+}
+#general-page form .label{
+  width: 30%;
+  font-weight: bold;
+  text-align: right;
+}
+#general-page form #is-promote{
+  float: none;
+  margin: 3px 4px;
+}
+#general-page form a{
+  margin-right: 5px;
+  line-height: 30px;
+}
+#general-page form input{
+  margin-top: 5px;
+  padding: 2px;
+  float: left;
+}
+#general-page form .colors{
+  float: left;
+  margin-left: 5px;
+}
+#general-page form .colors img{
+  vertical-align: middle;
+  margin-top: -1px;
+}
+#general-page form .goods_name_style{
+  float: left;
+  margin: 5px;
+}
+#general-page form .require-field{
+  margin-left: 1em;
+  font: 12px verdana;
+  color: #FF0000;
+  float: left;
+  line-height: 30px;
+}
+#general-page form .tip{
+  float: left;
+  font-weight: normal;
+  font-size: 12px;
+  color: #666;
+  line-height: 18px;
+}
+#general-page form .special{
+  margin: 0 5px;
+  padding: 1px 5px;
+  border: 1px solid #91C4D0;
+  border-right: 2px solid #278296;
+  border-bottom: 2px solid #278296;
+  background: #DDEEF2;
+  text-decoration: none;
+  font-weight: 400;
+  color:#666;
+}
+#general-page form select{
+  float: left;
+  margin: 9px 0;
+}
+#general-page form #add1{
+  float: left;
+  text-align: center;
+  line-height: 20px;
+  margin-top: 9px;
+}
+#general-page form #category_add{
+  display: none;
+}
+#general-page form #brand_add{
+  display: none;
+}
+#general-page form #add2{
+  float: left;
+  text-align: center;
+  line-height: 20px;
+  margin-top: 9px;
+}
+.tab-body .button{
+  padding: 5px 15px 5px !important; 
+  margin: 2px 2px;
+  border: none;
+  background: #ff3f3f;
+  color: #FFF;
+  cursor: pointer;
+  border-radius: 3px;
+}
+#general-page form #another select{
+  margin-right: 5px;
+}
+#general-page form .no-float{
+  float: none;
+  margin: 0 3px;
+}
+#general-page form .same_button{
+  height: 25px;
+  line-height: 23px;
+}
+#general-page form .pic-no{
+  vertical-align: middle;
+  padding: 10px 0;
+}
+#general-page form .function-on{
+  display: block !important;
+}
+.tab-body .button-div{
+  text-align: center;
+  padding: 3px 0;
+}
 
 
 

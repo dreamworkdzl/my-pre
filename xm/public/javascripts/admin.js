@@ -29,7 +29,7 @@ window.onload = function() {
   $("#to-list").click(function(){
     $(".page1").addClass("page-show").siblings("div").removeClass("page-show");
   });
-
+//控制list
   $("#list_control").click(function(){
     if($(this).hasClass("right")){
       $(this).removeClass("right").addClass("left");
@@ -41,4 +41,14 @@ window.onload = function() {
       $(".list-hidden").css("display","none");
     }
   });
+  //选项卡
+  $(".tab-key").children("p").children("span").click(function(){
+    $(this).addClass("tab-front").siblings("span").removeClass("tab-front").addClass("tab-back");
+    //控制选项卡对应的页面
+    if($("#general-tab").hasClass("tab-front")){
+      $("#general-page").css("display","block");
+    } else if ($("#general-tab").hasClass("tab-back")){
+      $("#general-page").css("display","none")
+    }
+  })
 }
