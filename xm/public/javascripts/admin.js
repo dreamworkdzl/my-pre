@@ -122,52 +122,7 @@ window.onload = function(){
 //	console.log($("#pageCurrent").html());
 //	var num = $("#totalPages").html();
 //	console.log(num);
-	$("#firstPage").click(function(){
-		var condition = $("#search-word").val();
-		var pageNO = 1;
-		var perPageCnt = $("#pageSize").val();
-		$("#goods-msg .trs").remove();
-		paging(condition,pageNO,perPageCnt);
-	});
-	$("#prevPage").click(function(){
-		var condition = $("#search-word").val();
-		var pageNO = $("#pageCurrent").html();
-		var perPageCnt = $("#pageSize").val();
-		$("#goods-msg .trs").remove();
-		if(pageNO > 1){
-			pageNO --;
-			$("#pageCurrent").text(pageNO);
-			paging(condition,pageNO,perPageCnt);
-		}else if(pageNO == 1){
-			alert("已经是第一页了");
-			$("#pageCurrent").text(1);
-			paging(condition,pageNO,perPageCnt);
-		}
-	})
-	$("#nextPage").click(function(){
-		var condition = $("#search-word").val();
-		var pageNO = $("#pageCurrent").html();
-		var perPageCnt = $("#pageSize").val();
-		var num = $("#totalPages").html();
-		$("#goods-msg .trs").remove();
-		if(pageNO < num){
-			pageNO ++;
-			$("#pageCurrent").text(pageNO);
-			paging(condition,pageNO,perPageCnt);
-		}else if(pageNO == num){
-			alert("已经是最后一页了");
-			$("#pageCurrent").text(num);
-			paging(condition,pageNO,perPageCnt);
-		}
-	})
-	$("#lastPage").click(function(){
-		var condition = $("#search-word").val();
-		var num = $("#totalPages").html();
-		var pageNO = num;
-		var perPageCnt = $("#pageSize").val();
-		$("#goods-msg .trs").remove();
-		paging(condition,pageNO,perPageCnt);
-	});
+
 	function paging(condition,pageNO,perPageCnt){
 		$.ajax({
 			url:"/goods/list",
