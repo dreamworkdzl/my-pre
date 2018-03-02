@@ -1,0 +1,174 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	color: #41A5E1 !important;
+}
+a:hover{
+	text-decoration: underline;
+}
+input{
+	outline: none;
+}
+html{
+	height: 100%;
+}
+body{
+	height: 100%;
+	min-width: 773px;
+	background: url(../images/body_bj.jpg) repeat center center;
+	overflow: hidden;
+}
+.big_logo{
+	position: fixed;
+	overflow: hidden;
+}
+.big_logo img{
+	width: 155px;
+	height: 38px;
+	padding: 40px 0 40px 50px;
+}
+.login_body{
+	width: 100%;
+	height: 100%;
+	background: url(../images/ecshop-bg.png) no-repeat;
+	background-size: cover;
+	background-position: center;
+	overflow: hidden;
+	position: relative;
+}
+.center_form{
+	width: 475px;
+	height: 507px;
+	position: absolute;
+	top:50%;
+	left: 50%;
+	margin-left: -253px;
+	margin-top: -237px;
+	overflow: hidden;
+}
+.logo{
+	width: 380px;
+	height: 65px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.logo img{
+	width: 248px;
+	height: 65px;
+	margin-left: 66px;
+}
+.login_zone{
+	position: relative;
+	overflow: hidden;
+	padding-bottom: 42px;
+	height: 350px;
+	background: url(../images/icloud-bar.png) no-repeat 0 bottom;
+	margin-top: 50px;
+}
+.login_module{
+	position: absolute;
+	left: 16px;
+	z-index: 2;
+	width: 302px;
+	height: 321px;
+	background: #fff;
+	background: rgba(255,255,255,.85);
+	border: none;
+	border-radius: 0;
+	color: #A1A1A1;
+	padding: 5px 70px 25px;
+	overflow: hidden;
+	box-shadow: 5px 2px 20px rgba(0,0,0,.3);
+	height: 322px;
+}
+.inputs{
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	background: rgba(255,255,255,.85);
+	margin-top: 46px;
+}
+.inputs .msg{
+	width: 301px;
+	height: 53px;
+	border-bottom: 2px solid #ddd;
+}
+.inputs .last{
+	border-bottom: none;
+	position: relative;
+}
+.inputs .msg input{
+	display: block;
+	border: none;
+	width: 200px;
+	height: 53px;
+	overflow: hidden;
+	background: rgba(255,255,255,.85);
+}
+.inputs .msg span{
+	display: block;
+	float: left;
+	width: 20px;
+	height: 20px;
+	margin: 15px;
+	margin-top: 16px;
+	overflow: hidden;
+	background: url(../images/icons.jpg) no-repeat left center;
+}
+.inputs #new-code{
+	width: 102px;
+	height: 34px;
+	position: absolute;
+	top:8px;
+	right: 8px;
+	border:1px solid #000;
+	text-align: center;
+	line-height: 34px;
+	cursor: pointer;
+}
+.inputs .msg .icon_2{
+	background-position: -21px 0;
+}
+.inputs .msg .icon_3{
+	background-position: -42px 0;
+}
+.button{
+	margin-top: 20px;
+	height: auto;
+	overflow: hidden;
+}
+.button #btn{
+	display: block;
+	color: #FFF;
+	width: 302px;
+	font-size: 16px;
+	line-height: 51px;
+	text-align: center;
+	background-color: #fc7878;
+	border: 0;
+	border-radius: 4px;
+	letter-spacing: 4px;
+	cursor: pointer;
+}
+.controls{
+	margin-top: 12px;
+	font-size: 12px;
+}
+.controls input{
+	margin: 2px 8px 0 0;
+	float: left;
+}
+.controls p{
+	display: block;
+}
+.controls p a{
+	margin-left: 25px;
+}
+.controls p .go-index{
+	float: right;
+}

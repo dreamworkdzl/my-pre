@@ -1,425 +1,499 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <title><%= title %></title>
-    <link rel='stylesheet' type="text/css" href="/stylesheets/admin.css" />
-    <script type="text/javascript" src="/javascripts/jquery-1.11.3.js"></script>
-    <script type="text/javascript" src="/javascripts/admin.js"></script>
-  </head>
-  <body>
-    <div id="top">
-      <div class="head">
-        <div class="logo">
-          <img src="images/topLogo.png">
-        </div>
-        <ul class="funct">
-          <li class="first-funs">
-            <a href="#">
-              <img src="images/topmune_09.png" alt="">
-              <span>更多模板堂产品</span>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="images/topmune_01.png">
-              <span>开店向导</span>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="images/topmune_02.png">
-              <span>记事本</span>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="images/topmune_03.png">
-              <span>刷新</span>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="images/topmune_04.png">
-              <span>个人设置</span>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="images/topmune_05.png">
-              <span>管理员留言</span>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="images/topmune_06.png">
-              <span>查看网店</span>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="images/topmune_007.png">
-              <span>帮助</span>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="images/topmune_07.png">
-              <span>关于&nbsp;ECSHOP</span>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="images/qingchu.png">
-              <span>清除缓存</span>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="images/topmune_08.png">
-              <span>退出</span>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="nav">
-        <ul>
-          <li>
-            <a href="#"><img src="images/index-11_07.png">起始页</a>
-          </li>
-          <span></span>
-          <li>
-            <a href="#"><img src="images/index-11_41.png">设置导航栏</a>
-          </li>
-          <span></span>
-          <li>
-            <a href="#"><img src="images/index-11_09.png">商品管理<span class="num">7</span></a>
-          </li>
-          <span></span>
-          <li>
-            <a href="#"><img src="images/dd.png">订单管理<span class="num">0</span></a>
-          </li>
-          <span></span>
-          <li>
-            <a href="#"><img src="images/index-11_13.png">广告管理<span class="num">2</span></a>
-          </li>
-          <span></span>
-          <li>
-            <a href="#"><img src="images/index-11_19.png">用户评论<span class="num">0</span></a>
-          </li>
-          <span></span>
-          <li>
-            <a href="#">商品列表</a>
-          </li>
-          <li>
-            <a href="#">订单列表</a>
-          </li>
-          <li>
-            <a href="#">用户评论</a>
-          </li>
-          <li>
-            <a href="#">会员列表</a>
-          </li>
-          <li>
-            <a href="#">商店设置</a>
-          </li>
-          <li>
-            <a href="#">移动版</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="main">
-      <div class="list-show">
-        <h2>导航菜单</h2>
-        <ul id="key">
-          <li class="lis icon1">
-            <a href="#">商品管理</a>
-            <ul id="content" class="hidden">
-              <li class="items" id="list">商品列表</li>
-              <li class="items">添加新商品</li>
-              <li class="items">商品分类</li>
-              <li class="items">用户评论</li>
-              <li class="items">商品品牌</li>
-              <li class="items">商品类型</li>
-              <li class="items">商品回收站</li>
-              <li class="items">图片批量处理</li>
-              <li class="items">商品批量上传</li>
-              <li class="items">商品批量导出</li>
-              <li class="items">商品批量修改</li>
-              <li class="items">生成商品代码</li>
-              <li class="items">标签管理</li>
-              <li class="items">虚拟商品列表</li>
-              <li class="items">添加虚拟商品</li>
-              <li class="items">更改加密串</li>
-              <li class="items">商品自动上下架</li>
-            </ul>
-          </li>
-          <li class="lis icon2">
-            <a href="#">促销管理</a>
-            <ul class="hidden"></ul>
-          </li>
-          <li class="lis icon3">
-            <a href="#">订单管理</a>
-            <ul class="hidden"></ul>
-          </li>
-          <li class="lis icon4">
-            <a href="#">广告管理</a>
-            <ul class="hidden"></ul>
-          </li>
-          <li class="lis icon5">
-            <a href="#">报表设计</a>
-            <ul class="hidden"></ul>
-          </li>
-          <li class="lis icon6">
-            <a href="#">文章管理</a>
-            <ul class="hidden"></ul>
-          </li>
-          <li class="lis icon7">
-            <a href="#">会员管理</a>
-            <ul class="hidden"></ul>
-          </li>
-          <li class="lis icon8">
-            <a href="#">权限管理</a>
-            <ul class="hidden"></ul>
-          </li>
-          <li class="lis icon9">
-            <a href="#">系统设置</a>
-            <ul class="hidden"></ul>
-          </li>
-          <li class="lis icon10">
-            <a href="#">模板管理</a>
-            <ul class="hidden"></ul>
-          </li>
-          <li class="lis icon11">
-            <a href="#">数据库管理</a>
-            <ul class="hidden"></ul>
-          </li>
-          <li class="lis icon12">
-            <a href="#">短信管理</a>
-            <ul class="hidden"></ul>
-          </li>
-          <li class="lis icon13">
-            <a href="#">推荐管理</a>
-            <ul class="hidden"></ul>
-          </li>
-          <li class="lis icon14">
-            <a href="#">邮件群发管理</a>
-            <ul class="hidden"></ul>
-          </li>
-          <li class="lis icon15">
-            <a href="#">移动版管理</a>
-            <ul class="hidden"></ul>
-          </li>
-          <li class="lis icon15">
-            <a href="#">模板堂知识库</a>
-            <ul class="hidden"></ul>
-          </li>
-        </ul>
-      </div>
-      <div class="list-hidden"></div>
-      <div class="on-off">
-        <a href="javascript:;" class="right" id="list_control"></a>
-      </div>
-      <div class="pages">
-        <div class="page1 page-show">
-          <h1>
-            <span class="title"><a href="#">ECSHOP&nbsp;管理中心</a>-&nbsp;商品列表</span>
-            <span class="for-help"><a href="#"><img src="images/jnsy.png"></a></span>
-            <span class="add-new"><a href="#" id="to-add-new">添加新商品</a></span>
-          </h1>
-          <div class="search">
-            <label>关键字<input type="text" id="search-word" size="15"></label>
-            <input type="submit" id="sub" value="搜索" />
-          </div>
-          <div class="list-div">
-            <table cellspacing="1" cellpadding="3" id="goods-msg">
-              <tr>
-                <th><input type="checkbox" id="check-all">
-                  <a href="#">编号</a>
-                </th>
-                <th>
-                  <a href="#">商品名称</a>
-                </th>
-                <th>
-                  <a href="#">货号</a>
-                </th>
-                <th>
-                  <a href="#">价格</a>
-                </th>
-                <th>
-                  <a href="#">上架</a>
-                </th>
-                <th>
-                  <a href="#">精品</a>
-                </th>
-                <th>
-                  <a href="#">新品</a>
-                </th>
-                <th>
-                  <a href="#">热销</a>
-                </th>
-                <th>
-                  <a href="#">推荐排序</a>
-                </th>
-                <th>
-                  <a href="#">库存</a>
-                </th>
-                <th>
-                  <a href="#">虚拟销量</a>
-                </th>
-                <th>操作</th>
-              </tr>
-              
-            </table>
-            <!-------------------分页------------------------>
-            <table id="page-table">
-              <tr>
-                <td>
-                  <div id="turn-page">
-                    总计
-                    <span id="totalRecode"></span> 个记录分为
-                    <span id="totalPages"></span> 页当前第
-                    <span id="pageCurrent"></span> 页，每页
-                    <input type="text" id="pageSize" size="3" value="10" />
-                    <span id="page-link">
-                      <a href="javascript:;" id="firstPage">第一页</a>
-                      <a href="javascript:;" id="prevPage">上一页</a>
-                      <a href="javascript:;" id="nextPage">下一页</a>
-                      <a href="javascript:;" id="lastPage">最末页</a>
-                    </span>
-                    <select id="gotoPage">
-                      <option value="1">1</option>
-                    </select>
-                  </div>
-                </td>
-              </tr>
-            </table>
-          </div>
-        </div>
-        <!--    添加商品页    -->
-        <div class="page2">
-          <h1>
-            <span class="title"><a href="#">ECSHOP&nbsp;管理中心</a>-&nbsp;添加新商品</span>
-            <span class="for-help"><a href="#"><img src="images/jnsy.png"></a></span>
-            <span class="add-new"><a href="#" id="to-list">商品列表</a></span>
-          </h1>
-          <div class="tab-div">
-            <div class="tab-key">
-              <p>
-                <span class="tab-front" id="general-tab">通用信息</span>
-                <span class="tab-back" id="detail-tab">详细描述</span>
-                <span class="tab-back" id="mix-tab">其他信息</span>
-                <span class="tab-back" id="properties-tab">商品属性</span>
-                <span class="tab-back" id="gallery-tab">商品相册</span>
-              </p>
-            </div>
-            <div class="tab-body">
-              <!-- tab-one -->
-              <div id="general-page" class="cur-page">
-                <form>
-                  <p>
-                    <span class="label">商品名称:</span>
-                    <span>
-                      <input type="text" size="30" id="goods_name"/>
-                      <i class="colors">
-                        <img src="images/color_selecter.gif"/>
-                      </i>
-                      <select name="goods_name_style" class="goods_name_style">
-                        <option value="">字体样式</option>
-                        <option value="strong">加粗</option>
-                        <option value="em">斜体</option>
-                        <option value="u">下划线</option>
-                        <option value="strike">删除线</option>            
-                      </select>
-                    </span>
-                    <span class="require-field">*</span>
-                  </p>
-                  <p><span class="label"><a href="#"><img src="images/notice.gif"></a>商品货号:</span><span><input type="text" size="20" id="goods_id"/><br><b class="tip">如果您不输入商品货号，系统将自动生成一个唯一的货号。</b></span></p>
-                  <p>
-                    <span class="label">商品分类:</span>
-                    <span>
-                      <select id="goods_class">
-                        <option>请选择...</option>
-                        <option>笔记本电脑</option>
-                        <option>手机</option>
-                      </select>
-                      <a href="javascript:;" class="special" id="add1">添加分类</a>
-                      <span id="category_add">
-                        <input type="text" class="text" size="10"/>
-                        <a href="javascript:;" class="special">确定</a>
-                        <a href="javascript:;" class="special">分类管理</a>
-                        <a href="javascript:;" class="special" id="close1"><<</a>
-                      </span>
-                    </span>
-                    <span class="require-field">*</span>
-                  </p>
-                  <p>
-                    <span class="label">扩展分类:</span>
-                    <span><input type="button" class="button" value="添加" /></span>
-                    <span id="another"></span>
-                  </p>
-                  <p><span class="label">商品品牌:</span>
-                    <span>
-                      <select>
-                        <option>请选择...</option>
-                      </select>
-                      <a href="javascript:;" class="special" id="add2">添加品牌</a>
-                      <span id="brand_add">
-                        <input type="text" class="text" size="10"/>
-                        <a href="javascript:;" class="special">确定</a>
-                        <a href="javascript:;" class="special">分类管理</a>
-                        <a href="javascript:;" class="special" id="close2"><<</a>
-                      </span>
-                    </span>
-                  </p>
-                  <p><span class="label">本店售价:</span><span><input type="text" size="20" value="0"  id="price"/><input type="button" value="按市场价计算" class="same_button"></span><span class="require-field">*</span></p>
-                  <p>
-                    <span class="label"><a href="#"><img src="images/notice.gif"></a>会员价格:</span>
-                    <span>
-                      注册用户<input type="text" size="10" value="-1" class="no-float"/>
-                      代销用户<input type="text" size="10" value="-1" class="no-float"/>
-                      vip<input type="text" size="10" value="-1" class="no-float"/><br>
-                      <b class="tip">会员价格为-1时表示会员价格按会员等级折扣率计算。你也可以为每个等级指定一个固定价格</b>
-                    </span>
-                  </p>
-                  <p>
-                    <span class="label"><a href="#"><img src="images/notice.gif"></a>商品优惠价格:</span>
-                    <span>
-                      <a href="javascript:;" style="color: #666;">[+]</a>
-                      优惠数量<input type="text" size="10" class="no-float"/>
-                      优惠价格<input type="text" size="10" class="no-float"/><br>
-                      <b class="tip">购买数量达到优惠数量时享受的优惠价格</b>
-                    </span>
-                  </p>
-                  <p><span class="label">市场售价:</span><span><input type="text" size="20" value="0"><input type="button" value="取整数" class="same_button"></span></p>
-                  <p><span class="label">虚拟销量:</span><span><input type="text" size="20" value="0"/></span></p>
-                  <p><span class="label"><a href="#"><img src="images/notice.gif"></a>赠送消费积分数:</span><span><input type="text" size="20" value="-1"/><br><b class="tip">   
+
+	<head>
+		<meta charset="UTF-8">
+		<title><%= title%></title>
+		<link rel="stylesheet" type="text/css" href="/stylesheets/admin.css" />
+		<script type="text/javascript" src="/javascripts/jquery-1.11.3.js"></script>
+		<script type="text/javascript" src="/javascripts/admin.js"></script>
+	</head>
+
+	<body>
+		<div id="top">
+			<div class="head">
+				<div class="logo">
+					<img src="images/topLogo.png">
+				</div>
+				<ul class="functions">
+					<li class="first-funs">
+						<a href="#"><img src="images/topmune_09.png"><span>更多模板堂产品</span></a>
+					</li>
+					<li>
+						<a href="#"><img src="images/topmune_01.png"><span>开店向导</span></a>
+					</li>
+					<li>
+						<a href="#"><img src="images/topmune_02.png"><span>记事本</span></a>
+					</li>
+					<li>
+						<a href="#"><img src="images/topmune_03.png"><span>刷新</span></a>
+					</li>
+					<li>
+						<a href="#"><img src="images/topmune_04.png"><span>个人设置</span></a>
+					</li>
+					<li>
+						<a href="#"><img src="images/topmune_05.png"><span>管理员留言</span></a>
+					</li>
+					<li>
+						<a href="#"><img src="images/topmune_06.png"><span>查看网店</span></a>
+					</li>
+					<li>
+						<a href="#"><img src="images/topmune_007.png"><span>帮助</span></a>
+					</li>
+					<li>
+						<a href="#"><img src="images/topmune_07.png"><span>关于&nbsp;ECSHOP</span></a>
+					</li>
+					<li>
+						<a href="#"><img src="images/qingchu.png"><span>清除缓存</span></a>
+					</li>
+					<li>
+						<a href="/login"><img src="images/topmune_08.png"><span>退出</span></a>
+					</li>
+				</ul>
+			</div>
+			<div class="nav">
+				<ul>
+					<li>
+						<a href="#"><img src="images/index-11_07.png">起始页</a>
+					</li>
+					<span></span>
+					<li>
+						<a href="#"><img src="images/index-11_41.png">设置导航栏</a>
+					</li>
+					<span></span>
+					<li>
+						<a href="#"><img src="images/index-11_09.png">商品管理<span class="num">7</span></a>
+					</li>
+					<span></span>
+					<li>
+						<a href="#"><img src="images/dd.png">订单管理<span class="num">0</span></a>
+					</li>
+					<span></span>
+					<li>
+						<a href="#"><img src="images/index-11_13.png">广告管理<span class="num">2</span></a>
+					</li>
+					<span></span>
+					<li>
+						<a href="#"><img src="images/index-11_19.png">用户评论<span class="num">0</span></a>
+					</li>
+					<span></span>
+					<li>
+						<a href="#">商品列表</a>
+					</li>
+					<li>
+						<a href="#">订单列表</a>
+					</li>
+					<li>
+						<a href="#">用户评论</a>
+					</li>
+					<li>
+						<a href="#">会员列表</a>
+					</li>
+					<li>
+						<a href="#">商店设置</a>
+					</li>
+					<li>
+						<a href="#">移动版</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="main">
+			<div class="list-show">
+				<h2>导航菜单</h2>
+				<ul id="key">
+					<li class="lis icon1">
+						<a href="#">商品管理</a>
+						<ul id="content" class="hidden">
+							<li class="items" id="list">商品列表</li>
+							<li class="items">添加新商品</li>
+							<li class="items">商品分类</li>
+							<li class="items">用户评论</li>
+							<li class="items">商品品牌</li>
+							<li class="items">商品类型</li>
+							<li class="items">商品回收站</li>
+							<li class="items">图片批量处理</li>
+							<li class="items">商品批量上传</li>
+							<li class="items">商品批量导出</li>
+							<li class="items">商品批量修改</li>
+							<li class="items">生成商品代码</li>
+							<li class="items">标签管理</li>
+							<li class="items">虚拟商品列表</li>
+							<li class="items">添加虚拟商品</li>
+							<li class="items">更改加密串</li>
+							<li class="items">商品自动上下架</li>
+						</ul>
+					</li>
+					<li class="lis icon2">
+						<a href="#">促销管理</a>
+						<ul class="hidden"></ul>
+					</li>
+					<li class="lis icon3">
+						<a href="#">订单管理</a>
+						<ul class="hidden"></ul>
+					</li>
+					<li class="lis icon4">
+						<a href="#">广告管理</a>
+						<ul class="hidden"></ul>
+					</li>
+					<li class="lis icon5">
+						<a href="#">报表设计</a>
+						<ul class="hidden"></ul>
+					</li>
+					<li class="lis icon6">
+						<a href="#">文章管理</a>
+						<ul class="hidden"></ul>
+					</li>
+					<li class="lis icon7">
+						<a href="#">会员管理</a>
+						<ul class="hidden"></ul>
+					</li>
+					<li class="lis icon8">
+						<a href="#">权限管理</a>
+						<ul class="hidden"></ul>
+					</li>
+					<li class="lis icon9">
+						<a href="#">系统设置</a>
+						<ul class="hidden"></ul>
+					</li>
+					<li class="lis icon10">
+						<a href="#">模板管理</a>
+						<ul class="hidden"></ul>
+					</li>
+					<li class="lis icon11">
+						<a href="#">数据库管理</a>
+						<ul class="hidden"></ul>
+					</li>
+					<li class="lis icon12">
+						<a href="#">短信管理</a>
+						<ul class="hidden"></ul>
+					</li>
+					<li class="lis icon13">
+						<a href="#">推荐管理</a>
+						<ul class="hidden"></ul>
+					</li>
+					<li class="lis icon14">
+						<a href="#">邮件群发管理</a>
+						<ul class="hidden"></ul>
+					</li>
+					<li class="lis icon15">
+						<a href="#">移动版管理</a>
+						<ul class="hidden"></ul>
+					</li>
+					<li class="lis icon15">
+						<a href="#">模板堂知识库</a>
+						<ul class="hidden"></ul>
+					</li>
+				</ul>
+			</div>
+			<div class="list-hidden"></div>
+			<div class="on-off">
+				<a href="javascript:;" class="right" id="list_control"></a>
+			</div>
+			<div class="pages">
+				<div class="page1 page-show">
+					<h1>
+						<span class="title"><a href="#">ECSHOP&nbsp;管理中心</a>-&nbsp;商品列表</span>
+						<span class="for-help"><a href="#"><img src="images/jnsy.png"></a></span>
+						<span class="add-new"><a href="javascript:;" id="to-add-new">添加新商品</a></span>
+					</h1>
+					<div class="search">
+						<label>关键字<input type="text" id="search-word" size="15"></label>
+						<input type="submit" id="sub" value="搜索" />
+					</div>
+					<div class="list-div">
+						<table cellspacing="1" cellpadding="3" id="goods-msg">
+							<tr>
+								<th><input type="checkbox" id="check-all">
+									<a href="#">编号</a>
+								</th>
+								<th>
+									<a href="#">商品名称</a>
+								</th>
+								<th>
+									<a href="#">货号</a>
+								</th>
+								<th>
+									<a href="#">价格</a>
+								</th>
+								<th>
+									<a href="#">上架</a>
+								</th>
+								<th>
+									<a href="#">精品</a>
+								</th>
+								<th>
+									<a href="#">新品</a>
+								</th>
+								<th>
+									<a href="#">热销</a>
+								</th>
+								<th>
+									<a href="#">推荐排序</a>
+								</th>
+								<th>
+									<a href="#">库存</a>
+								</th>
+								<th>
+									<a href="#">虚拟销量</a>
+								</th>
+								<th>操作</th>
+							</tr>
+							
+						</table>
+						<!-------------------分页------------------------>
+						<table id="page-table">
+							<tr>
+								<td>
+									<div id="turn-page">
+										总计
+										<span id="totalRecode"></span> 个记录分为
+										<span id="totalPages"></span> 页当前第
+										<span id="pageCurrent"></span> 页，每页
+										<input type="text" id="pageSize" size="3" value="10" />
+										<span id="page-link">
+											<a href="javascript:;" id="firstPage">第一页</a>
+											<a href="javascript:;" id="prevPage">上一页</a>
+											<a href="javascript:;" id="nextPage">下一页</a>
+											<a href="javascript:;" id="lastPage">最末页</a>
+										</span>
+										<select id="gotoPage">
+											<option value="1">1</option>
+										</select>
+									</div>
+								</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+				<!------------------------添加商品页------------------------>
+				<div class="page2">
+					<h1>
+						<span class="title"><a href="#">ECSHOP&nbsp;管理中心</a>-&nbsp;添加新商品</span>
+						<span class="for-help"><a href="#"><img src="images/jnsy.png"></a></span>
+						<span class="add-new"><a href="javascript:;" id="to-list">商品列表</a></span>
+					</h1>
+					<div class="tab-div">
+						<div class="tab-key">
+							<p>
+								<span class="tab-front" id="general-tab">通用信息</span>
+								<span class="tab-back" id="detail-tab">详细描述</span>
+								<span class="tab-back" id="mix-tab">其他信息</span>
+								<span class="tab-back" id="properties-tab">商品属性</span>
+								<span class="tab-back" id="gallery-tab">商品相册</span>
+							</p>
+						</div>
+						<div class="tab-body">
+							<!--选项卡第一页-->
+							<div id="general-page" class="cur-page">
+								<form>
+									<p>
+										<span class="label">商品名称:</span>
+										<span>
+											<input type="text" size="30" id="goods_name"/>
+											<i class="colors">
+												<img src="images/color_selecter.gif"/>
+											</i>
+											<select name="goods_name_style" class="goods_name_style">
+              									<option value="">字体样式</option>
+              									<option value="strong">加粗</option>
+              									<option value="em">斜体</option>
+              									<option value="u">下划线</option>
+              									<option value="strike">删除线</option>            
+											</select>
+										</span>
+										<span class="require-field">*</span>
+									</p>
+									<p><span class="label"><a href="#"><img src="images/notice.gif"></a>商品货号:</span><span><input type="text" size="20" id="goods_id"/><br><b class="tip">如果您不输入商品货号，系统将自动生成一个唯一的货号。</b></span></p>
+									<p>
+										<span class="label">商品分类:</span>
+										<span>
+											<select id="goods_class">
+												<option>请选择...</option>
+												<option>笔记本电脑</option>
+												<option>手机</option>
+											</select>
+											<a href="javascript:;" class="special" id="add1">添加分类</a>
+											<span id="category_add">
+												<input type="text" class="text" size="10"/>
+												<a href="javascript:;" class="special">确定</a>
+												<a href="javascript:;" class="special">分类管理</a>
+												<a href="javascript:;" class="special" id="close1"><<</a>
+											</span>
+										</span>
+										<span class="require-field">*</span>
+									</p>
+									<p>
+										<span class="label">扩展分类:</span>
+										<span><input type="button" class="button" value="添加" /></span>
+										<span id="another"></span>
+									</p>
+									<p><span class="label">商品品牌:</span>
+										<span>
+											<select>
+												<option>请选择...</option>
+											</select>
+											<a href="javascript:;" class="special" id="add2">添加品牌</a>
+											<span id="brand_add">
+												<input type="text" class="text" size="10"/>
+												<a href="javascript:;" class="special">确定</a>
+												<a href="javascript:;" class="special">分类管理</a>
+												<a href="javascript:;" class="special" id="close2"><<</a>
+											</span>
+										</span>
+									</p>
+									<p><span class="label">本店售价:</span><span><input type="text" size="20" value="0"  id="price"/><input type="button" value="按市场价计算" class="same_button"></span><span class="require-field">*</span></p>
+									<p>
+										<span class="label"><a href="#"><img src="images/notice.gif"></a>会员价格:</span>
+										<span>
+											注册用户<input type="text" size="10" value="-1" class="no-float"/>
+											代销用户<input type="text" size="10" value="-1" class="no-float"/>
+											vip<input type="text" size="10" value="-1" class="no-float"/><br>
+											<b class="tip">会员价格为-1时表示会员价格按会员等级折扣率计算。你也可以为每个等级指定一个固定价格</b>
+										</span>
+									</p>
+									<p>
+										<span class="label"><a href="#"><img src="images/notice.gif"></a>商品优惠价格:</span>
+										<span>
+											<a href="javascript:;" style="color: #666;">[+]</a>
+											优惠数量<input type="text" size="10" class="no-float"/>
+											优惠价格<input type="text" size="10" class="no-float"/><br>
+											<b class="tip">购买数量达到优惠数量时享受的优惠价格</b>
+										</span>
+									</p>
+									<p><span class="label">市场售价:</span><span><input type="text" size="20" value="0"/><input type="button" value="取整数" class="same_button"></span></p>
+									<p><span class="label">虚拟销量:</span><span><input type="text" size="20" value="0"/></span></p>
+									<p><span class="label"><a href="#"><img src="images/notice.gif"></a>赠送消费积分数:</span><span><input type="text" size="20" value="-1"/><br><b class="tip"> 	
 购买该商品时赠送消费积分数,-1表示按商品价格赠送</b></span></p>
-                  <p><span class="label"><a href="#"><img src="images/notice.gif"></a>赠送等级积分数:</span><span><input type="text" size="20" value="-1"/><br><b class="tip">   
+									<p><span class="label"><a href="#"><img src="images/notice.gif"></a>赠送等级积分数:</span><span><input type="text" size="20" value="-1"/><br><b class="tip"> 	
 购买该商品时赠送消费积分数,-1表示按商品价格赠送</b></span></p>
-                  <p><span class="label"><a href="#"><img src="images/notice.gif"></a>积分购买金额:</span><span><input type="text" size="20" value="0"/><br><b class="tip">(此处需填写金额)购买该商品时最多可以使用积分的金额</b></span></p>
-                  <p><span class="label"><label for="is-promote"><input type="checkbox" id="is-promote">促销价:</label></span><span><input type="text" size="20" disabled=""/></span></p>
-                  <p><span class="label">促销日期:</span><span><input type="text" size="10"/><input type="button" class="button" value="选择"><span>-</span><input type="text" size="10"/><input type="button" class="button" value="选择"></span></p>
-                  <p>
-                    <span class="label" style="height: 60px;">上传商品图片:</span><input type="file" size="20" class="file" id="img"/><img src="images/no.gif" class="pic-no">
-                    <br/>
-                    <input type="text" placeholder="商品图片外部URL" class="file-text" style="float: none;margin: 5px 0;" size="40">
-                  </p>
-                  <p><span class="label" style="height: 80px;">上传商品缩略图:</span><input type="file" size="20" disabled="" class="file"/><img src="images/no.gif" class="pic-no"><br/><input type="text" placeholder="商品图片外部URL" disabled="" class="file-text" style="float: none; margin: 5px 0;" size="40">
-                    <br/>
-                    <input type="checkbox" id="auto-small-pic" style="float: left;margin: 0;" checked="checked"><label for="auto-small-pic">自动生成商品缩略图</label>
-                  </p>
-                </form>
-                <div class="button-div">
-                  <input type="button" value="确定" class="button up_load1"/>
-                  <input type="button" value="重置" class="button"/>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </body>
+									<p><span class="label"><a href="#"><img src="images/notice.gif"></a>积分购买金额:</span><span><input type="text" size="20" value="0"/><br><b class="tip">(此处需填写金额)购买该商品时最多可以使用积分的金额</b></span></p>
+									<p><span class="label"><label for="is-promote"><input type="checkbox" id="is-promote">促销价:</label></span><span><input type="text" size="20" disabled=""/></span></p>
+									<p><span class="label">促销日期:</span><span><input type="text" size="10"/><input type="button" class="button" value="选择"><span>-</span><input type="text" size="10"/><input type="button" class="button" value="选择"></span></p>
+									<p>
+										<span class="label" style="height: 60px;">上传商品图片:</span><input type="file" size="20" class="file" id="img"/><img src="images/no.gif" class="pic-no">
+										<br/>
+										<input type="text" placeholder="商品图片外部URL" class="file-text" style="float: none;margin: 5px 0;" size="40">
+									</p>
+									<p><span class="label" style="height: 80px;">上传商品缩略图:</span><input type="file" size="20" disabled="" class="file"/><img src="images/no.gif" class="pic-no"><br/><input type="text" placeholder="商品图片外部URL" disabled="" class="file-text" style="float: none; margin: 5px 0;" size="40">
+										<br/>
+										<input type="checkbox" id="auto-small-pic" style="float: left;margin: 0;" checked="checked"><label for="auto-small-pic">自动生成商品缩略图</label>
+									</p>
+								</form>
+								<div class="button-div">
+									<input type="button" value="确定" class="button up_load1"/>
+									<input type="button" value="重置" class="button"/>
+								</div>
+							</div>
+							<!--选项卡第二页-->
+							<div id="detail-page">
+								<!-- <textarea></textarea> -->
+								<img src="images/word.png">
+							</div>
+							<!--选项卡第三页-->
+							<div id="mix-page">
+								<form>
+									<p>
+										<span class="label">商品名称:</span>
+										<span>
+											<input type="text" size="20"/>
+											<select name="goods_weight" class="goods_weight">
+              									<option value="kg">千克</option>
+              									<option value="g">克</option>
+              								</select>
+										</span>
+									</p>
+									<p><span class="label"><a href="#"><img src="images/notice.gif"></a>商品库存数量:</span><span><input type="text" size="20" value="1"/><br><b class="tip">库存在商品为虚货或商品存在货品时为不可编辑状态，库存数值取决于其虚货数量或货品数量</b></span></p>
+									<p>
+										<span class="label">库存警告数量:</span>
+										<span>
+											<input type="text" size="20" value="1"/>
+										</span>
+									</p>
+									<p>
+										<span class="label">加入推荐:</span>
+										<span class="checkboxes">
+											<input type="checkbox" />精品
+											<input type="checkbox" />新品
+											<input type="checkbox" />热销
+										</span>
+									</p>
+									<p>
+										<span class="label">上架:</span>
+										<span class="checkboxes">
+											<input type="checkbox" checked="checked"/>打勾表示允许销售，否则不允许销售。
+										</span>
+									</p>
+									<p>
+										<span class="label">能作为普通商品销售:</span>
+										<span class="checkboxes">
+											<input type="checkbox" checked="checked"/>打勾表示能作为普通商品销售，否则只能作为配件或赠品销售。
+										</span>
+									</p>
+									<p>
+										<span class="label">是否为免运费商品:</span>
+										<span class="checkboxes">
+											<input type="checkbox" />打勾表示此商品不会产生运费花销，否则按照正常运费计算。
+										</span>
+									</p>
+									<p>
+										<span class="label">商品关键词:</span>
+										<span>
+											<input type="text" size="30"/>用空格分隔
+										</span>
+									</p>
+									<p>
+										<span class="label" style="height: 70px;">商品简单描述:</span>
+										<span><textarea></textarea></span>
+									</p>
+									<p>
+										<span class="label" style="height: 80px;"><img src="images/notice.gif">商家备注:</span>
+										<span><textarea></textarea><br>
+										<b class="tip">仅供商家自己看的信息</b></span>
+									</p>
+								</form>
+								<div class="button-div">
+									<input type="button" value="确定" class="button"/>
+									<input type="button" value="重置" class="button"/>
+								</div>
+							</div>
+							<!--选项卡第四页-->
+							<div id="properties-page">
+								<form>
+									<p>
+										<span class="label"><img src="images/notice.gif">商品类型:</span>
+										<span>
+											<select>
+												<option>请选择商品类型</option>
+												<option>笔记本电脑</option>
+												<option>手机</option>
+												<option>数码相机</option>
+												<option>键盘、鼠标</option>
+											</select><br>
+											<b class="tip">请选择商品的所属类型，进而完善此商品的属性</b>
+										</span>
+									</p>
+								</form>
+								<div class="button-div">
+									<input type="button" value="确定" class="button"/>
+									<input type="button" value="重置" class="button"/>
+								</div>
+							</div>
+							<!--选项卡第五页-->
+							<div id="gallery-page">
+								<form>
+									<p><a href="#">[+]</a>图片描述<input type="text" size="20">上传文件<input type="file"><input type="text" placeholder="或者输入外部图片链接地址" size="30"></p>
+								</form>
+								<div class="button-div">
+									<input type="button" value="确定" class="button"/>
+									<input type="button" value="重置" class="button"/>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+
 </html>

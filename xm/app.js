@@ -4,9 +4,14 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
+const mongoose = require('mongoose');
+var session = require('express-session');
 
+//链接数据库
+mongoose.connect('mongodb://localhost/h1725',{useMongoClient: true});
 var index = require('./routes/index');
 var users = require('./routes/users');
+var goods = require('./routes/goods');
 
 var app = express();
 
@@ -24,6 +29,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', index);
 app.use('/users', users);
+app.use('/goods', goods);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
@@ -31,6 +37,12 @@ app.use(function(req, res, next) {
   err.status = 404;
   next(err);
 });
+
+app.use(session({
+  resave: true, // don't save session if unmodified  
+  saveUninitialized: false, // don't create session until something stored  
+  secret: 'h5_1725' 
+}))
 
 // error handler
 app.use(function(err, req, res, next) {
