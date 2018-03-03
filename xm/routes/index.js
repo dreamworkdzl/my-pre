@@ -73,4 +73,18 @@ router.post('/api/admin4ajax', function(req, res, next) {
 	})
 });
 
+router.get('/api/goods_del', function(req, res, next) {
+  	GoodsModel.findByIdAndRemove({_id:req.query.gId},function(err) {
+  		var result = {
+  			status: 1,
+  			message: "商品删除成功"
+  		};
+  		if(err) {
+  			result.status = -99;
+  			result.message = "删除失败";
+  		}
+  		res.send(result)
+  	})
+});
+
 module.exports = router;

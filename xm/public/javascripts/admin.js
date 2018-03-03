@@ -122,7 +122,52 @@ window.onload = function(){
 //	console.log($("#pageCurrent").html());
 //	var num = $("#totalPages").html();
 //	console.log(num);
-
+	$("#firstPage").click(function(){
+		var condition = $("#search-word").val();
+		var pageNO = 1;
+		var perPageCnt = $("#pageSize").val();
+		$("#goods-msg .trs").remove();
+		paging(condition,pageNO,perPageCnt);
+	});
+	$("#prevPage").click(function(){
+		var condition = $("#search-word").val();
+		var pageNO = $("#pageCurrent").html();
+		var perPageCnt = $("#pageSize").val();
+		$("#goods-msg .trs").remove();
+		if(pageNO > 1){
+			pageNO --;
+			$("#pageCurrent").text(pageNO);
+			paging(condition,pageNO,perPageCnt);
+		}else if(pageNO == 1){
+			alert("已经是第一页了");
+			$("#pageCurrent").text(1);
+			paging(condition,pageNO,perPageCnt);
+		}
+	})
+	$("#nextPage").click(function(){
+		var condition = $("#search-word").val();
+		var pageNO = $("#pageCurrent").html();
+		var perPageCnt = $("#pageSize").val();
+		var num = $("#totalPages").html();
+		$("#goods-msg .trs").remove();
+		if(pageNO < num){
+			pageNO ++;
+			$("#pageCurrent").text(pageNO);
+			paging(condition,pageNO,perPageCnt);
+		}else if(pageNO == num){
+			alert("已经是最后一页了");
+			$("#pageCurrent").text(num);
+			paging(condition,pageNO,perPageCnt);
+		}
+	})
+	$("#lastPage").click(function(){
+		var condition = $("#search-word").val();
+		var num = $("#totalPages").html();
+		var pageNO = num;
+		var perPageCnt = $("#pageSize").val();
+		$("#goods-msg .trs").remove();
+		paging(condition,pageNO,perPageCnt);
+	});
 	function paging(condition,pageNO,perPageCnt){
 		$.ajax({
 			url:"/goods/list",
@@ -155,19 +200,37 @@ window.onload = function(){
 							'<td class="first-cell"><span>' + gName +'</span></td>'+
 							'<td><span>ECS000'+ gId+ '</span></td>'+
 							'<td><span>' + gPrice + '</span></td>'+
-							'<td><img src="images/yes.gif" onclick="change()"></td>'+
-							'<td><img src="images/yes.gif" onclick="change()"></td>'+
-							'<td><img src="images/yes.gif" onclick="change()"></td>'+
-							'<td><img src="images/yes.gif" onclick="change()"></td>'+
+							'<td><img src="images/yes.gif"></td>'+
+							'<td><img src="images/yes.gif"></td>'+
+							'<td><img src="images/yes.gif"></td>'+
+							'<td><img src="images/yes.gif"></td>'+
 							'<td><span>100</span></td>'+
 							'<td><span>97</span></td>'+
 							'<td><span>0</span></td>'+
 							'<td>'+
 								'<a href="javascript:;" class="edit"><img src="images/icon_edit.gif"></a>'+
-								'<a href="javascript:;" class="delete"><img src="images/icon_trash.gif"></a>'+
+								'<a href="javascript:;" class="delete""><img src="images/icon_trash.gif"></a>'+
 							'</td>'+
 						'</tr>'
 					)
+						function del(gId) {
+							alert(123)
+							$.ajax({
+								url: "/api/goods_del",
+								type: "get",
+								data:{
+									gId:gId
+								},
+								success: function(res) {
+									console.log(res)
+									if(res.status == 1){
+										location.reload(true)
+									} else {
+										alert(res.message)
+									}
+								}
+							})
+						}
 					//控制page1中焦点td的背景颜色
 				//	console.log($("#goods-msg").children("tbody").children("tr"));
 					$("#goods-msg").children("tbody").children("tr").mouseover(function(){
@@ -202,6 +265,9 @@ window.onload = function(){
 			
 		})
 	}
+	// $(".delete").click(function(){
+	// 	del();
+	// })
 
 	//添加商品页-商品信息交互
 	$(".up_load1").click(function(){
